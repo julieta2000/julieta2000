@@ -1,0 +1,115 @@
+/*fuente de font-google para las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@300&display=swap');
+
+/*variables de uso*/
+:root{
+    --colorblanco: white;
+    --colorblack: black;
+    --colorprecio: pink;
+    --fuenteparrafo: 'Roboto', sans-serif;
+    --fuentetitulo: 'Montserrat', sans-serif;
+
+}
+
+/*estilo del cuerpo y encabezado*/
+body{
+   font-family: var(--fuentetitulo);
+   font-size: 1.2rem;
+   line-height: 1.2;
+}
+
+h1,h2,h3,h4,h5,h5{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--colorblack);
+    line-height: 1.2;
+} 
+
+
+/*estilos para el encabezado de nuestro header*/
+header {
+    background-color: yellow; 
+}
+
+
+.navbar-brand {
+    color: var(--colorblack); 
+}
+
+/* Estilo hover para el logo AntoTech */
+.navbar-brand:hover {
+    color: #e74c3c; 
+}
+
+/*estilos hover para los enlaces de navegacion*/
+.nav-link:hover {
+    color: #e74c3c; 
+}
+
+
+.nav-link.active:hover {
+    color: #3498db; 
+}
+
+/*Estilos de Hover para Elementos como el título con la clase text-center, el título principal (h1) en la sección principal (main), la tabla de carrito y el total de la compra.*/
+.text-center:hover {
+    color: #e74c3c; 
+    cursor: pointer;
+}
+
+main h1:hover {
+    color: var(--colorprecio); 
+    cursor: pointer; 
+}
+
+/* Efecto hover para la tabla de carrito */
+table:hover {
+    background-color: var(--colorprecio); 
+    transform: scale(1.02); /* Escala al 102% del tamaño original */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agregamos una transición suave */
+}
+
+/* Estilo hover para el total de la compra */
+#total-compra:hover {
+    color: violet; 
+    cursor: pointer; 
+    transform: scale(1.05); 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    min-height: 75px;
+}
+
+/*estilos para los enlaces a las redes sociales*/
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.social li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
